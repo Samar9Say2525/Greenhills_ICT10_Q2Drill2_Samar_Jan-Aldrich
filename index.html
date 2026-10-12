@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container pt-4 mt-4">
+    <form>
+        <div class="form-group">
+        <label>First Name</label>
+        <input type="name" class="form-control" id="firstname" placeholder="Enter your First Name"><br>
+        </div>  
+
+        <div class="form-group">
+        <label>Last Name</label>
+        <input type="name" class="form-control" id="surname" placeholder="Enter your Last Name"><br>    
+        </div>  
+
+        <input type="button" py-click="name_finder" value="Search">
+
+    <div id="result"></div>
+    </form>
+    </div>
+</div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
